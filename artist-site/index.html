@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Collage + AI Films — Artist Portfolio</title>
+	<meta name="description" content="Portfolio of a digital artist working with collage and AI-generated films.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="icon" href="assets/img/favicon.png">
+</head>
+<body>
+	<header class="site-header" id="top">
+		<a class="logo" href="#top" aria-label="Home">Collage/AI</a>
+		<button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="nav-toggle-bar"></span>
+			<span class="nav-toggle-bar"></span>
+			<span class="nav-toggle-bar"></span>
+		</button>
+		<nav id="site-nav" class="site-nav" aria-label="Primary">
+			<ul>
+				<li><a href="#work">Works</a></li>
+				<li><a href="#films">AI Films</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero" aria-label="Hero">
+			<div class="hero-inner">
+				<h1>Digital Collage & AI Film</h1>
+				<p class="tagline">Layered realities, machine dreams, and human textures.</p>
+				<div class="hero-cta">
+					<a class="btn primary" href="#work">View Works</a>
+					<a class="btn" href="#films">Watch Films</a>
+				</div>
+			</div>
+			<div class="hero-media" role="img" aria-label="Collage background"></div>
+		</section>
+
+		<section id="work" class="section" aria-labelledby="work-title">
+			<div class="section-header">
+				<h2 id="work-title">Selected Works</h2>
+				<p>Collage series exploring memory, identity, and glitch aesthetics.</p>
+			</div>
+			<div class="grid gallery" data-lightbox>
+				<a class="gallery-item" href="assets/img/work-1-large.jpg" data-title="Fragments of Tomorrow">
+					<img src="assets/img/work-1.jpg" alt="Collage artwork titled Fragments of Tomorrow">
+				</a>
+				<a class="gallery-item" href="assets/img/work-2-large.jpg" data-title="Signal Garden">
+					<img src="assets/img/work-2.jpg" alt="Collage artwork titled Signal Garden">
+				</a>
+				<a class="gallery-item" href="assets/img/work-3-large.jpg" data-title="Neural Tapestry">
+					<img src="assets/img/work-3.jpg" alt="Collage artwork titled Neural Tapestry">
+				</a>
+				<a class="gallery-item" href="assets/img/work-4-large.jpg" data-title="Echoes in Color">
+					<img src="assets/img/work-4.jpg" alt="Collage artwork titled Echoes in Color">
+				</a>
+			</div>
+		</section>
+
+		<section id="films" class="section alt" aria-labelledby="films-title">
+			<div class="section-header">
+				<h2 id="films-title">AI Film Works</h2>
+				<p>Experimental short films made with generative systems and hand-cut edits.</p>
+			</div>
+			<div class="films">
+				<article class="film-card">
+					<div class="film-media">
+						<video controls preload="metadata" poster="assets/img/film-1.jpg">
+							<source src="assets/video/film-1.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="film-info">
+						<h3>Dreams of Static</h3>
+						<p>AI hallucinations stitched with analog textures; a meditation on noise.</p>
+					</div>
+				</article>
+				<article class="film-card">
+					<div class="film-media">
+						<video controls preload="metadata" poster="assets/img/film-2.jpg">
+							<source src="assets/video/film-2.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+					<div class="film-info">
+						<h3>City of Mirrors</h3>
+						<p>GAN cities and paper cuts coalesce into a feverish nocturne.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="about" class="section" aria-labelledby="about-title">
+			<div class="about">
+				<div class="about-text">
+					<h2 id="about-title">About the Artist</h2>
+					<p>I'm a digital artist blending collage traditions with machine learning tools. My practice explores how datasets remember, forget, and dream—reassembling fragments into synthetic memory.</p>
+					<p>Exhibitions include group shows in Berlin, NYC, and online festivals. Available for commissions, screenings, and collaborations.</p>
+					<ul class="about-list">
+						<li>Based in: Remote / Global</li>
+						<li>Mediums: Digital collage, AI video, sound</li>
+						<li>Tools: Photoshop, After Effects, Python, Stable Diffusion</li>
+					</ul>
+				</div>
+				<div class="about-media" role="img" aria-label="Studio collage still"></div>
+			</div>
+		</section>
+
+		<section id="contact" class="section alt" aria-labelledby="contact-title">
+			<div class="section-header">
+				<h2 id="contact-title">Contact</h2>
+				<p>For screenings, commissions, or just to say hello.</p>
+			</div>
+			<form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+				<div class="form-row">
+					<label for="name">Name</label>
+					<input id="name" name="name" type="text" required>
+				</div>
+				<div class="form-row">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" required>
+				</div>
+				<div class="form-row">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+				<div class="form-actions">
+					<button class="btn primary" type="submit">Send</button>
+				</div>
+				<p class="form-hint">You can replace the form action with your email service.</p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<p>© <span id="year"></span> Collage/AI. All rights reserved.</p>
+			<ul class="social">
+				<li><a href="#" aria-label="Instagram">Instagram</a></li>
+				<li><a href="#" aria-label="Vimeo">Vimeo</a></li>
+				<li><a href="#" aria-label="Twitter">Twitter</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>

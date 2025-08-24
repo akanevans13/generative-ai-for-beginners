@@ -1,0 +1,20 @@
+{
+  "batch_size": 64,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "channels": null,
+  "checkpoint_every": 1,
+  "d_features": 64,
+  "data_dir": "/workspace/data",
+  "dataset": "mnist",
+  "epochs": 1,
+  "g_features": 64,
+  "image_size": 64,
+  "latent_dim": 128,
+  "lr": 0.0002,
+  "max_steps": 60,
+  "num_workers": 2,
+  "out_dir": "/workspace/outputs/dcgan_mnist",
+  "sample_every": 200,
+  "seed": 42
+}
